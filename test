@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba de JavaScript</title>
+  <style>
+    #test-paragraph {
+      font-size: 20px;
+      color: black;
+      cursor: pointer;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Prueba de JavaScript</h1>
+  <p id="test-paragraph">Haz clic aquí para cambiar mi color</p>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const paragraph = document.getElementById('test-paragraph');
+      
+      paragraph.addEventListener('click', () => {
+        paragraph.style.color = paragraph.style.color === 'blue' ? 'black' : 'blue';
+      });
+    });
+  </script>
+</body>
+</html>
